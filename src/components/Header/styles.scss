@@ -1,0 +1,7 @@
+@use "src/styles/vars";
+
+.header {
+  &__link {
+    margin-left: 3rem;
+  }
+}

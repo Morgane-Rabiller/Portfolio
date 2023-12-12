@@ -1,0 +1,23 @@
+@use "src/styles/vars";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;600;700&family=Vampiro+One&display=swap');
+
+body {
+  background-color: vars.$color-dark;
+}
+
+.app {
+  width: 500px;
+  margin: vars.$gutter 2rem;
+  text-align: center;
+  width: auto;
+  color: vars.$color-main;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto Mono";
+  font-weight: 600;
+
+  &__title {
+    font-size: xx-large;
+    font-family: 'Vampiro One';
+  }
+}
