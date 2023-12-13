@@ -8,13 +8,15 @@ body {
 .app {
   width: 500px;
   margin: vars.$gutter 2rem;
-  text-align: center;
   width: auto;
   color: vars.$color-main;
-  display: flex;
-  justify-content: space-between;
   font-family: "Roboto Mono";
   font-weight: 600;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__title {
     font-size: xx-large;

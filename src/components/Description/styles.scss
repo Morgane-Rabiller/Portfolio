@@ -1,0 +1,20 @@
+@use 'src/styles/vars';
+
+.description {
+  margin: calc(5*vars.$gutter);
+  border: 5px solid vars.$color-main;
+  border-radius: 50px;
+  padding: calc(2*vars.$gutter);
+  background-color: vars.$color-bg-card;
+
+  &__title {
+    font-weight: bold;
+    font-size:x-large;
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: calc(2*vars.$gutter);
+    font-weight: 600;
+  }
+}
