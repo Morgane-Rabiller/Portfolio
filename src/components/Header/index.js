@@ -1,12 +1,13 @@
 import './styles.scss';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => (
   <div className="header">
-    <a href="/" className="header__link">Présentation</a>
-    <a href="/" className="header__link">parcours</a>
-    <a href="/" className="header__link">compétences</a>
-    <a href="/" className="header__link">projets</a>
-    <a href="/" className="header__link">contact</a>
+    <NavLink to="/" className="header__link">Présentation</NavLink>
+    <NavLink to="/parcours" className="header__link">parcours</NavLink>
+    <NavLink to="/competences" className="header__link">compétences</NavLink>
+    <NavLink to="/projets" className="header__link">projets</NavLink>
+    <NavLink to="/contact" className="header__link">contact</NavLink>
   </div>
 );
 

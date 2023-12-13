@@ -1,0 +1,12 @@
+@use 'src/styles/vars';
+
+.notfound {
+  text-align: center;
+  margin: calc(5*vars.$gutter);
+  font-size: xx-large;
+
+  &__error {
+    font-size: 10rem;
+    margin-bottom: vars.$gutter;
+  }
+}
