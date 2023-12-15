@@ -11,10 +11,6 @@ const Description = () => {
     return (
         <div className="description">
             <p className="description__title">{description.title}</p>
-            {/* <p
-                className="description__content"
-                dangerouslySetInnerHTML={{ __html: cleanContent }}
-            /> */}
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter

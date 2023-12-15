@@ -1,0 +1,21 @@
+@use "src/styles/vars";
+
+.contact {
+    margin: calc(3*vars.$gutter) calc(5 * vars.$gutter);
+    border: 5px solid vars.$color-main;
+    border-radius: 50px;
+    padding: calc(2 * vars.$gutter);
+    background-color: vars.$color-bg-card;
+    font-weight: 600;
+
+    &__title {
+        font-weight: bold;
+        font-size: x-large;
+        text-align: center;
+        margin-bottom: calc(2 * vars.$gutter);
+    }
+
+    &__content {
+        font-weight: 600;
+    }
+}
