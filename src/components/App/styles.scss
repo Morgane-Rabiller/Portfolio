@@ -7,19 +7,9 @@ body {
 
 .app {
   width: 500px;
-  margin: vars.$gutter 2rem;
+  margin: vars.$gutter;
   width: auto;
   color: vars.$color-main;
   font-family: "Roboto Mono";
   font-weight: 600;
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__title {
-    font-size: xx-large;
-    font-family: 'Vampiro One';
-  }
 }

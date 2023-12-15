@@ -1,7 +1,29 @@
 @use "src/styles/vars";
 
 .header {
+  display: flex;
+  justify-content: space-between;
+
+  &__title-container {
+    display: flex;
+    align-items:center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Vampiro One';
+  }
+
   &__link {
     margin-left: 3rem;
+  }
+
+  &__logo {
+    width: 115px;
+    height: 150px;
+    margin-right: calc(2*vars.$gutter);
   }
 }

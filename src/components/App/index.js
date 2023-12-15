@@ -9,7 +9,6 @@ import NotFound from "../NotFound";
 const App = () => (
     <div className="app">
         <div className="app__header">
-            <h1 className="app__title">MOGO</h1>
             <Header />
         </div>
         <Routes>
