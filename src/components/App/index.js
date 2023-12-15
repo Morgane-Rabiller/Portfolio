@@ -7,11 +7,36 @@ import Contact from "src/components/Contact";
 import Projects from "src/components/Projects";
 import Skills from "src/components/skills";
 import NotFound from "src/components/NotFound";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 // == Composant
-const App = () => (
-    <div className="app">
+const App = () =>  {
+  // console.log(window.location.pathname);
+  const location = useLocation();
+  console.log(location);
+  let classname;
+
+  switch (location.pathname) {
+    case "/":
+      classname = "app app--description";
+      break;
+    case "/parcours":
+      classname = "app app--career";
+      break;
+    case "/competences":
+      classname = "app app--skills";
+      break;
+    case "/projets":
+      classname = "app app--projects";
+      break;
+    case "/contact":
+      classname = "app app--contact";
+      break;
+    default: "/"
+    break;
+  }
+  return (
+    <div className={classname}>
         <div className="app__header">
             <Header />
         </div>
@@ -25,6 +50,7 @@ const App = () => (
         </Routes>
     </div>
 );
+  }
 
 // == Export
 export default App;
