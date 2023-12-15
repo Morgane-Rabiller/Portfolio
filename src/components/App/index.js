@@ -11,9 +11,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 // == Composant
 const App = () =>  {
-  // console.log(window.location.pathname);
   const location = useLocation();
-  console.log(location);
   let classname;
 
   switch (location.pathname) {
