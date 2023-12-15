@@ -12,10 +12,21 @@
         font-weight: bold;
         font-size: x-large;
         text-align: center;
-        margin-bottom: calc(2 * vars.$gutter);
+        margin-bottom: calc(3 * vars.$gutter);
     }
 
     &__content {
         font-weight: 600;
     }
+
+    &__list {
+     columns: 6;
+    }
+}
+
+.stack {
+  margin: vars.$gutter*3 0;
+  &__img {
+    width: 3rem;
+  }
 }
