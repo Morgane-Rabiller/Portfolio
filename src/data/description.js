@@ -1,5 +1,5 @@
 export default {
-  title: "PRESENTATION",
+  title: "MA PRESENTATION",
   content: `Je m'appelle Morgane Rabiller, j'ai 27 ans et je vais bientôt terminer une formation pour devenir développeuse web. <br> <br>
 
   Titulaire d'un titre professionnel "développeur web et web mobile" équivalent bac+2 acquis grâce à l'école O'clock, je suis maintenant sur la fin de mon alternance visant à acquérir le titre professionnel "concepteur développeur d'applications" équivalent bac+3/4 qui se termine le 2 Février 2024 toujours avec l'école O'clock. Je passerais mon examen le 31 Janvier 2024.<br> <br>

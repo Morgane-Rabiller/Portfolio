@@ -1,6 +1,6 @@
 import "./styles.scss";
-import { NavLink } from "react-router-dom";
 import logo from 'src/assets/logo-portfolio.png';
+import Link from './link';
 
 const Header = () => (
     <div className="header">
@@ -9,21 +9,11 @@ const Header = () => (
             <h1 className="header__title">MOGO</h1>
         </div>
         <div className="header__link-container">
-            <NavLink to="/" className="header__link">
-                Présentation
-            </NavLink>
-            <NavLink to="/parcours" className="header__link">
-                parcours
-            </NavLink>
-            <NavLink to="/competences" className="header__link">
-                compétences
-            </NavLink>
-            <NavLink to="/projets" className="header__link">
-                projets
-            </NavLink>
-            <NavLink to="/contact" className="header__link">
-                contact
-            </NavLink>
+          <Link link="/" content="Présentation"/>
+          <Link link="/parcours" content="parcours"/>
+          <Link link="/competences" content="compétences"/>
+          <Link link="/projets" content="projets"/>
+          <Link link="/contact" content="contact"/>
         </div>
     </div>
 );

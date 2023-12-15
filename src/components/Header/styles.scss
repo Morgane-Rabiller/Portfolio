@@ -3,6 +3,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  // align-items:center;
 
   &__title-container {
     display: flex;
@@ -19,6 +20,17 @@
 
   &__link {
     margin-left: 3rem;
+
+    &-container {
+      margin: vars.$gutter vars.$gutter 0 0;
+    }
+
+    &--active {
+      background-color: vars.$color-bg-card;
+      border: 1px solid vars.$color-bg-card;
+      box-shadow: 0 0 7px 6px vars.$color-bg-card;
+      border-radius: 15%;
+    }
   }
 
   &__logo {
