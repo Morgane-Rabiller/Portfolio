@@ -7,6 +7,7 @@
     padding: calc(2 * vars.$gutter);
     background-color: vars.$color-bg-card;
     font-weight: 600;
+    text-align: center;
 
     &__title {
         font-weight: bold;
@@ -21,17 +22,12 @@
 
     &__list {
      columns: 6;
+     margin-top: 2rem;
     }
 }
 
 .stack {
   margin: vars.$gutter*3 0;
-  opacity: 0; 
-  transition: 5s; 
-
-  &.visible {
-    opacity: 1;
-  }
 
   &__img {
     width: 3rem;

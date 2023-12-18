@@ -20,7 +20,6 @@ const Projects = () => {
     return (
         <div className="projects">
             <p className="projects__title">MES PROJETS</p>
-
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter

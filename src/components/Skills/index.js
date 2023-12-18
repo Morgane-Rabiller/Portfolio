@@ -22,10 +22,25 @@ import figma from "src/assets/img/skills/figma.png";
 import docker from "src/assets/img/skills/docker.png";
 import trello from "src/assets/img/skills/trello.png";
 import scrum from "src/assets/img/skills/scrum.png";
+import Typewriter from "typewriter-effect";
 
 const Skills = () => (
     <div className="skills">
         <p className="skills__title">MES COMPÉTENCES</p>
+        <Typewriter
+            onInit={(typewriter) => {
+                typewriter
+                    .typeString(
+                        "Voilà la liste des compétences que j'ai pu apprendre durant mes différentes formations"
+                    )
+                    .start();
+            }}
+            options={{
+                autoStart: true,
+                delay: 10,
+                wrapperClassName: ".description__content",
+            }}
+        />
         <div className="skills__list">
             <Stack img={html} content="HTML5" />
             <Stack img={css} content="CSS3" />
