@@ -18,8 +18,8 @@ const Projects = () => {
   }, []);
 
     return (
-        <div className="projects">
-            <p className="projects__title">MES PROJETS</p>
+        <div className="projects my-6 mx-8 p-5 text-center">
+            <p className="font-bold text-2xl text-center mb-5">MES PROJETS</p>
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
@@ -31,18 +31,18 @@ const Projects = () => {
                 options={{
                     autoStart: true,
                     delay: 10,
-                    wrapperClassName: ".description__content",
+                    wrapperClassName: "font-semibold",
                 }}
             />
-            <div className="projects__list">
-                <div className="project" ref={refProject1}>
-                    <p className="project__title">A Pet 4 Life</p>
+            <div className="flex flex-column gap-5 m-6 md:flex-row md:justify-content-around md:gap-2">
+                <div className="project flex align-items-center" ref={refProject1}>
+                    <p className="mb-3">A Pet 4 Life</p>
                     <img
-                        className="project__img"
+                        className="project__img w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl"
                         src={apet4life}
                         alt="aPet4Life"
                     />
-                    <p className="project__desc">
+                    <p className="mb-3">
                         Projet réalisé en fin de formation DWWM
                     </p>
                     <a
@@ -53,10 +53,10 @@ const Projects = () => {
                         Lien vers le site
                     </a>
                 </div>
-                <div className="project" ref={refProject2}>
+                <div className="project flex align-items-center" ref={refProject2}>
                     <p className="project__title">O'MY BAND</p>
-                    <img className="project__img" src={omyband} alt="omyband" />
-                    <p className="project__desc">
+                    <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl" src={omyband} alt="omyband" />
+                    <p className="mb-3">
                         Projet réalisé en fin de formation CDA
                     </p>
                     <a className="project__link" href="" target="_blanc">
