@@ -4,29 +4,25 @@ import Typewriter from "typewriter-effect";
 import DOMPurify from "dompurify";
 
 const Career = () => {
-  const cleanContent = DOMPurify.sanitize(career.content, {
-      ALLOWED_TAGS: ["br"],
-  });
-  
+    const cleanContent = DOMPurify.sanitize(career.content, {
+        ALLOWED_TAGS: ["br"],
+    });
+
     return (
-        <div className="career">
-            <p className="career__title">{career.title}</p>
+        <div className="career my-6 mx-8 p-5">
+            <p className="font-bold text-2xl text-center mb-5">
+                {career.title}
+            </p>
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
                         .typeString(cleanContent)
-                        .callFunction(() => {
-                            console.log("String typed out!");
-                        })
-                        .callFunction(() => {
-                            console.log("All strings were deleted");
-                        })
                         .start();
                 }}
                 options={{
                     autoStart: true,
                     delay: 10,
-                    wrapperClassName: ".description__content",
+                    wrapperClassName: "font-semibold",
                 }}
             />
         </div>
