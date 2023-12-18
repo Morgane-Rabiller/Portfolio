@@ -15,5 +15,5 @@ export default {
   Et sinon, hors du cadre du travail ?  <br> 
   Je suis plutôt casanière du genre à bien aimer ma routine et chill devant mes films et mes séries mais j'aime faire la fête, j'aime les balades en forêt et en montagnes, j'ai pu découvrir le plaisir de la spéléologie et de la via ferrata il y a peu, j'aime voyager et découvrir de nouvelles cultures. <br>
   Ma plus grande passion c'est la musique, j'écoute de tout mais principalement du rock / métal et j'adore chanter ! 🎤<br>
-  De plus, vous l'aurez compris via mon logo, je suis team chat 💙`,
+  De plus, vous l'aurez compris via mon logo, je suis team chat ! 💙`,
 }
