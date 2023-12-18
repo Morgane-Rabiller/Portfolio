@@ -25,7 +25,7 @@ const Description = () => {
                 }}
                 options={{
                     autoStart: true,
-                    delay: 20,
+                    delay: 10,
                     wrapperClassName: ".description__content",
                 }}
             />

@@ -30,7 +30,9 @@ const App = () =>  {
     case "/contact":
       classname = "app app--contact";
       break;
-    default: "/"
+    case "":
+      classname = "app app--description";
+    default: classname = "app app--description"
     break;
   }
   return (

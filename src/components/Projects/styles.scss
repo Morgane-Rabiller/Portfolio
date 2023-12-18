@@ -18,4 +18,35 @@
     &__content {
         font-weight: 600;
     }
+
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 3rem;
+    }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+    margin-bottom: vars.$gutter;
+  }
+
+  &__desc {
+    margin-bottom: vars.$gutter;
+  }
+
+  &__img {
+    width: 30rem;
+    margin-bottom: vars.$gutter;
+    border: 3px solid vars.$color-project;
+    border-radius: 25px;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
 }
