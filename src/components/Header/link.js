@@ -5,7 +5,7 @@ const Link = ({ link, content }) => (
     <NavLink
         to={link}
         className={({ isActive }) =>
-            isActive ? "header__link header__link--active" : "header__link"
+            isActive ? "ml-6 header__link--active" : "ml-6"
         }
     >
         {content}

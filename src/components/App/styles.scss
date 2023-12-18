@@ -11,21 +11,41 @@ body {
 
   &--description {
   color: vars.$color-main;
+
+  .header__button {
+    background-color: vars.$color-main;
+  }
   }
 
   &--career {
     color: vars.$color-career;
+
+    .header__button {
+      background-color: vars.$color-career;
+    }
   }
 
   &--skills {
-    color: vars.$color-skills
+    color: vars.$color-skills;
+    
+  .header__button {
+    background-color: vars.$color-skills;
+  }
   }
 
   &--projects {
-    color: vars.$color-project
+    color: vars.$color-project;
+    
+  .header__button {
+    background-color: vars.$color-project;
+  }
   }
 
   &--contact {
     color: vars.$color-contact;
+    
+  .header__button {
+    background-color: vars.$color-contact;
+  }
   }
 }

@@ -9,12 +9,12 @@ const Header = () => {
   
   const [visible, setVisible] = useState(false);
     return (
-        <div className="header">
-            <div className="header__title-container">
-                <img src={logo} alt="Mogo" className="header__logo" />
-                <h1 className="header__title">MOGO</h1>
+        <div className="flex justify-content-between">
+            <div className="flex align-items-center">
+                <img src={logo} alt="Mogo" className="header__logo w-7rem h-10rem mr-5" />
+                <h1 className="header__title text-6xl">MOGO</h1>
             </div>
-            <div className="header__link-container hidden md:block">
+            <div className="mt-3 mr-3 hidden md:block">
                 <Link link="/" content="Présentation" />
                 <Link link="/parcours" content="parcours" />
                 <Link link="/competences" content="compétences" />
@@ -32,7 +32,7 @@ const Header = () => {
                 <Link link="/contact" content="contact" />
             </div>
             </Sidebar>
-            <Button icon="pi pi-bars" onClick={() => setVisible(true)} className="header__button block h-3rem w-3rem flex md:hidden"/>
+            <Button icon="pi pi-bars" onClick={() => setVisible(true)} className="header__button block h-3rem w-3rem border-none flex md:hidden"/>
         </div>
     );
 };

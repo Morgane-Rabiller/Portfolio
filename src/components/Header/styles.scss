@@ -1,19 +1,8 @@
 @use "src/styles/vars";
 
 .header {
-  display: flex;
-  justify-content: space-between;
-
-  &__title-container {
-    display: flex;
-    align-items:center;
-  }
 
   &__title {
-    font-weight: bold;
-    font-size: x-large;
-    text-align: center;
-    font-size: 3rem;
     font-family: 'Vampiro One';
   }
 
@@ -23,27 +12,12 @@
 
   &__button {
     background-color: vars.$color-main;
-    border: none;
   }
 
-  &__link {
-    margin-left: 3rem;
-
-    &-container {
-      margin: vars.$gutter vars.$gutter 0 0;
-    }
-
-    &--active {
+  &__link--active {
       background-color: vars.$color-bg-card;
       border: 1px solid vars.$color-bg-card;
       box-shadow: 0 0 7px 6px vars.$color-bg-card;
       border-radius: 15%;
-    }
-  }
-
-  &__logo {
-    width: 115px;
-    height: 150px;
-    margin-right: calc(2*vars.$gutter);
   }
 }
