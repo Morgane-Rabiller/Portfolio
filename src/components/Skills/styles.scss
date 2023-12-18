@@ -26,6 +26,13 @@
 
 .stack {
   margin: vars.$gutter*3 0;
+  opacity: 0; /* Rend l'élément invisible au départ */
+  transition: 5s; /* Ajoute une transition de 0.5 secondes avec une fonction d'interpolation "ease" */
+
+  &.visible {
+    opacity: 1; /* Rend l'élément visible lorsque la classe "visible" est ajoutée */
+  }
+
   &__img {
     width: 3rem;
   }

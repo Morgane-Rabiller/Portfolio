@@ -49,7 +49,6 @@ const Skills = () => (
             <Stack img={docker} content="Docker" />
             <Stack img={trello} content="Trello" />
             <Stack img={scrum} content="Méthode agile SCRUM" />
-            ajouter jest
         </div>
     </div>
 );
