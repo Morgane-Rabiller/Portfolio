@@ -1,12 +1,20 @@
 @use "src/styles/vars";
 
 .contact {
-    margin: calc(3*vars.$gutter) calc(5 * vars.$gutter);
+    margin: vars.$gutter*3 auto;
     border: 5px solid vars.$color-contact;
     border-radius: 50px;
     padding: calc(2 * vars.$gutter);
     background-color: vars.$color-bg-card;
     font-weight: 600;
+    width: 30%;
+
+    @media (max-width: 1350px) {
+      width: 50%;
+    }
+    @media (max-width: 700px) {
+      width: 80%;
+    }
 
     &__title {
         font-weight: bold;
@@ -18,4 +26,25 @@
     &__content {
         font-weight: 600;
     }
+
+    &__coords {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__coord {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &--img {
+          width: 3rem;
+          margin-right: vars.$gutter;
+      }
+  
+      &--link:hover {
+        text-decoration: underline;
+      }
+  }
 }
+

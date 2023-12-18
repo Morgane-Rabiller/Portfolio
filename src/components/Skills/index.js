@@ -31,7 +31,7 @@ const Skills = () => (
             onInit={(typewriter) => {
                 typewriter
                     .typeString(
-                        "Voilà la liste des compétences que j'ai pu apprendre durant mes différentes formations"
+                        "Voilà la liste des compétences que j'ai pu apprendre durant mes différentes formations :"
                     )
                     .start();
             }}
