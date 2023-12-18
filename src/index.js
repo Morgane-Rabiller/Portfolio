@@ -1,6 +1,8 @@
 // == Import : npm
 import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import 'primeicons/primeicons.css';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 // == Import : local
 // Composants

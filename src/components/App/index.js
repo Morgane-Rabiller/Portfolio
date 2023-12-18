@@ -12,27 +12,27 @@ import { Routes, Route, useLocation } from "react-router-dom";
 // == Composant
 const App = () =>  {
   const location = useLocation();
-  let classname;
+  let classname = "m-3 font-semibold ";
 
   switch (location.pathname) {
     case "/":
-      classname = "app app--description";
+      classname += "app app--description";
       break;
     case "/parcours":
-      classname = "app app--career";
+      classname += "app app--career";
       break;
     case "/competences":
-      classname = "app app--skills";
+      classname += "app app--skills";
       break;
     case "/projets":
-      classname = "app app--projects";
+      classname += "app app--projects";
       break;
     case "/contact":
-      classname = "app app--contact";
+      classname += "app app--contact";
       break;
     case "":
-      classname = "app app--description";
-    default: classname = "app app--description"
+      classname += "app app--description";
+    default: classname += "app app--description"
     break;
   }
   return (

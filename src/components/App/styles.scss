@@ -6,12 +6,8 @@ body {
 }
 
 .app {
-  width: 500px;
-  margin: vars.$gutter;
-  width: auto;
   color: vars.$color-main;
   font-family: "Roboto Mono";
-  font-weight: 600;
 
   &--description {
   color: vars.$color-main;

@@ -3,7 +3,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  // align-items:center;
 
   &__title-container {
     display: flex;
@@ -16,6 +15,15 @@
     text-align: center;
     font-size: 3rem;
     font-family: 'Vampiro One';
+  }
+
+  &__sidebar {
+    background-color: vars.$color-bg-card;
+  }
+
+  &__button {
+    background-color: vars.$color-main;
+    border: none;
   }
 
   &__link {
