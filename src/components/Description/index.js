@@ -9,24 +9,18 @@ const Description = () => {
     });
 
     return (
-        <div className="description">
-            <p className="description__title">{description.title}</p>
+        <div className="description p-5">
+            <p className="description__title font-bold text-2xl text-center mb-5">{description.title}</p>
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
                         .typeString(cleanContent)
-                        .callFunction(() => {
-                            console.log("String typed out!");
-                        })
-                        .callFunction(() => {
-                            console.log("All strings were deleted");
-                        })
                         .start();
                 }}
                 options={{
                     autoStart: true,
                     delay: 10,
-                    wrapperClassName: ".description__content",
+                    wrapperClassName: "font-semibold",
                 }}
             />
             <div>
