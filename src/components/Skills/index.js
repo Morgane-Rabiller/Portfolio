@@ -25,8 +25,8 @@ import scrum from "src/assets/img/skills/scrum.png";
 import Typewriter from "typewriter-effect";
 
 const Skills = () => (
-    <div className="skills">
-        <p className="skills__title">MES COMPÉTENCES</p>
+    <div className="skills my-6 mx-8 p-5 text-center">
+        <p className="font-bold text-2xl text-center mb-5">MES COMPÉTENCES</p>
         <Typewriter
             onInit={(typewriter) => {
                 typewriter
@@ -38,11 +38,11 @@ const Skills = () => (
             options={{
                 autoStart: true,
                 delay: 10,
-                wrapperClassName: ".description__content",
+                wrapperClassName: "font-semibold",
             }}
         />
-        <div className="skills__list">
-            <Stack img={html} content="HTML5" />
+        <div className="flex flex-wrap gap-6 mt-5">
+            <Stack img={html} content="HTML5"/>
             <Stack img={css} content="CSS3" />
             <Stack img={javscript} content="Javascript" />
             <Stack img={php} content="PHP" />
