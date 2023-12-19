@@ -9,7 +9,7 @@ const Career = () => {
     });
 
     return (
-        <div className="career my-6 mx-8 p-5">
+        <div className="career p-5 my-5 md:mx-8">
             <p className="font-bold text-2xl text-center mb-5">
                 {career.title}
             </p>

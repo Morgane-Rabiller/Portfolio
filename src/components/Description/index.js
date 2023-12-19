@@ -9,7 +9,7 @@ const Description = () => {
     });
 
     return (
-        <div className="description p-5">
+        <div className="description p-5 my-5 md:mx-8">
             <p className="description__title font-bold text-2xl text-center mb-5">{description.title}</p>
             <Typewriter
                 onInit={(typewriter) => {

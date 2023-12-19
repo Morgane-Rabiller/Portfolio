@@ -25,7 +25,7 @@ import scrum from "src/assets/img/skills/scrum.png";
 import Typewriter from "typewriter-effect";
 
 const Skills = () => (
-    <div className="skills my-6 mx-8 p-5 text-center">
+    <div className="skills p-5 my-5 md:mx-8">
         <p className="font-bold text-2xl text-center mb-5">MES COMPÉTENCES</p>
         <Typewriter
             onInit={(typewriter) => {

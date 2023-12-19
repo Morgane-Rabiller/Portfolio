@@ -18,7 +18,7 @@ const Projects = () => {
   }, []);
 
     return (
-        <div className="projects my-6 mx-8 p-5 text-center">
+        <div className="projects p-5 my-5 md:mx-8">
             <p className="font-bold text-2xl text-center mb-5">MES PROJETS</p>
             <Typewriter
                 onInit={(typewriter) => {

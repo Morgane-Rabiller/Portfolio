@@ -1,7 +1,6 @@
 @use "src/styles/vars";
 
 .description {
-    margin: calc(3*vars.$gutter) calc(5 * vars.$gutter);
     border: 5px solid vars.$color-main;
     border-radius: 50px;
     background-color: vars.$color-bg-card;
