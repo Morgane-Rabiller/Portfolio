@@ -1,7 +1,7 @@
 export default {
   title: "MA PRESENTATION",
   content: `
-  Bonjour et bienvenue dans mon portfolio, je vais tout d'abord commencer par me présenter, et ensuite, je vous laisserais explorer le reste de mon site 😊 <br> <br>
+  Bonjour et bienvenue dans mon <strong>portfolio</strong>, je vais tout d'abord commencer par me présenter, et ensuite, je vous laisserais explorer le reste de mon site 😊 <br> <br>
 
   Je m'appelle <strong>Morgane Rabiller</strong>, j'ai 27 ans, je suis développeuse web et je vais bientôt terminer une formation pour devenir conceptrice développeuse d'applications. <br> <br>
 
