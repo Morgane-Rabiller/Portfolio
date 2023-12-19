@@ -1,23 +1,46 @@
 @use "src/styles/vars";
 
 .header {
+    &__title {
+        font-family: "Vampiro One";
+    }
 
-  &__title {
-    font-family: 'Vampiro One';
-  }
+    &__sidebar {
+        background-color: vars.$color-dark;
+        border: 3px solid rgb(80, 79, 79);
+        font-family: "Roboto Mono";
 
-  &__sidebar {
-    background-color: vars.$color-bg-card;
-  }
+        &--title {
+            font-family: "Vampiro One";
+            font-weight: bold;
+        }
+    }
 
-  &__button {
-    background-color: vars.$color-main;
-  }
-
-  &__link--active {
-      background-color: vars.$color-bg-card;
-      border: 1px solid vars.$color-bg-card;
-      box-shadow: 0 0 7px 6px vars.$color-bg-card;
-      border-radius: 15%;
-  }
+    &__link--active {
+        background-color: vars.$color-bg-card;
+        border: 1px solid vars.$color-bg-card;
+        box-shadow: 0 0 7px 6px vars.$color-bg-card;
+        border-radius: 15%;
+    }
 }
+
+.main-color {
+    color: vars.$color-main;
+}
+
+.career-color {
+    color: vars.$color-career;
+}
+
+.skills-color {
+    color: vars.$color-skills;
+}
+
+.projects-color {
+    color: vars.$color-project;
+}
+
+.contact-color {
+    color: vars.$color-contact;
+}
+

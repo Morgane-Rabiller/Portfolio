@@ -1,51 +1,51 @@
 @use "src/styles/vars";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;600;700&family=Vampiro+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;600;700&family=Vampiro+One&display=swap");
 
 body {
-  background-color: vars.$color-dark;
+    background-color: vars.$color-dark;
 }
 
 .app {
-  color: vars.$color-main;
-  font-family: "Roboto Mono";
+    color: vars.$color-main;
+    font-family: "Roboto Mono";
 
-  &--description {
-  color: vars.$color-main;
+    &--description {
+        color: vars.$color-main;
 
-  .header__button {
-    background-color: vars.$color-main;
-  }
-  }
-
-  &--career {
-    color: vars.$color-career;
-
-    .header__button {
-      background-color: vars.$color-career;
+        .header__button {
+            background-color: vars.$color-main;
+        }
     }
-  }
 
-  &--skills {
-    color: vars.$color-skills;
-    
-  .header__button {
-    background-color: vars.$color-skills;
-  }
-  }
+    &--career {
+        color: vars.$color-career;
 
-  &--projects {
-    color: vars.$color-project;
-    
-  .header__button {
-    background-color: vars.$color-project;
-  }
-  }
+        .header__button {
+            background-color: vars.$color-career;
+        }
+    }
 
-  &--contact {
-    color: vars.$color-contact;
-    
-  .header__button {
-    background-color: vars.$color-contact;
-  }
-  }
+    &--skills {
+        color: vars.$color-skills;
+
+        .header__button {
+            background-color: vars.$color-skills;
+        }
+    }
+
+    &--projects {
+        color: vars.$color-project;
+
+        .header__button {
+            background-color: vars.$color-project;
+        }
+    }
+
+    &--contact {
+        color: vars.$color-contact;
+
+        .header__button {
+            background-color: vars.$color-contact;
+        }
+    }
 }
