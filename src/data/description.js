@@ -3,7 +3,7 @@ export default {
   content: `
   Bonjour et bienvenue dans mon portfolio, je vais tout d'abord commencer par me présenter, et ensuite, je vous laisserais explorer le reste de mon site 😊 <br> <br>
 
-  Je m'appelle Morgane Rabiller, j'ai 27 ans, je suis développeuse web et je vais bientôt terminer une formation pour devenir conceptrice développeuse d'applications. <br> <br>
+  Je m'appelle <strong>Morgane Rabiller</strong>, j'ai 27 ans, je suis développeuse web et je vais bientôt terminer une formation pour devenir conceptrice développeuse d'applications. <br> <br>
 
   Titulaire d'un titre professionnel "développeur web et web mobile" équivalent bac+2 acquis grâce à l'école O'clock, je suis maintenant sur la fin de mon alternance visant à acquérir le titre professionnel "concepteur développeur d'applications" équivalent bac+3/4 qui se termine le 2 Février 2024 toujours avec l'école O'clock. Je passerais mon examen le 31 Janvier 2024.<br> <br>
 

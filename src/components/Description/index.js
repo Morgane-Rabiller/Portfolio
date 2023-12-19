@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 const Description = () => {
     const cleanContent = DOMPurify.sanitize(description.content, {
-        ALLOWED_TAGS: ["br"],
+        ALLOWED_TAGS: ["br", "strong"],
     });
 
     return (
