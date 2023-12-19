@@ -10,10 +10,6 @@ const Contact = () => (
     <p className="font-bold text-2xl text-center mb-5">ME CONTACTER</p>
     <div>
       <div className='flex align-items-center justify-content-start mb-3'>
-        <img className='w-3rem mr-3' src={tel} alt="phone" />
-        <p> 07 60 75 02 87</p>
-      </div>
-      <div className='flex align-items-center justify-content-start mb-3'>
         <img className='w-3rem mr-3' src={adress} alt="adress" />
         <p>Couëron</p>
       </div>
