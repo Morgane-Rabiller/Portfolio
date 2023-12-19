@@ -24,7 +24,7 @@ const Projects = () => {
                 onInit={(typewriter) => {
                     typewriter
                         .typeString(
-                            "Durant de mes deux formations j'ai pratiqué les notions appris dans divers projets proposés par la formation absolument tous les jours via différents challenges. Cependant, les principaux projets où on a pu mettre en pratique tout ce qu'on avait appris tout au long de l'année sont ceux que je présente ici."
+                            "Durant de mes deux formations, j'ai pratiqué les notions apprises dans divers projets proposés par la formation absolument tous les jours via différents challenges. Cependant, les principaux projets où on a pu mettre en pratique tout ce qu'on avait appris tout au long de l'année sont ceux que je présente ici."
                         )
                         .start();
                 }}
