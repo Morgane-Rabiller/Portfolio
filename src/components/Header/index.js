@@ -3,12 +3,17 @@ import logo from "src/assets/logo-portfolio.png";
 import Link from "./link";
 import { Sidebar } from "primereact/sidebar";
 import { Button } from 'primereact/button';
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
   const location = useLocation();
+
+  const closeSidebar = () => {
+    setVisible(false);
+  };
+
   let classnameSidebar = "header__sidebar border-round-right-2xl ";
   let classnameSidebarTitle = "header__sidebar--title text-center mb-7 ";
 
@@ -57,11 +62,11 @@ const Header = () => {
             <Sidebar visible={visible} onHide={() => setVisible(false)} className={classnameSidebar}>
                 <h2 className={classnameSidebarTitle}>MENU</h2>
                 <div className="flex flex-column font-bold gap-5 w-11rem">
-                <Link link="/" content="Présentation"/>
-                <Link link="/parcours" content="parcours" />
-                <Link link="/competences" content="compétences" />
-                <Link link="/projets" content="projets" />
-                <Link link="/contact" content="contact" />
+                <Link link="/" content="Présentation" closeSidebar={closeSidebar} />
+                <Link link="/parcours" content="parcours" closeSidebar={closeSidebar} />
+                <Link link="/competences" content="compétences" closeSidebar={closeSidebar} />
+                <Link link="/projets" content="projets" closeSidebar={closeSidebar} />
+                <Link link="/contact" content="contact" closeSidebar={closeSidebar} />
             </div>
             </Sidebar>
             <Button icon="pi pi-bars" onClick={() => setVisible(true)} className="header__button block h-3rem w-3rem border-none flex lg:hidden"/>
