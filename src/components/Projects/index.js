@@ -46,11 +46,18 @@ const Projects = () => {
                         Projet réalisé en fin de formation DWWM
                     </p>
                     <a
-                        className="project__link"
+                        className="project__link project__link--first"
                         href="https://apet4life.huiitre.fr/"
                         target="_blanc"
                     >
                         Lien vers le site
+                    </a>
+                    <a
+                        className="project__link"
+                        href="https://github.com/Morgane-Rabiller/apet4life-back"
+                        target="_blanc"
+                    >
+                        Lien vers le Github du backend
                     </a>
                 </div>
                 <div className="project flex align-items-center" ref={refProject2}>
@@ -59,8 +66,11 @@ const Projects = () => {
                     <p className="mb-3">
                         Projet réalisé en fin de formation CDA
                     </p>
-                    <a className="project__link" href="" target="_blanc">
-                        Lien à venir
+                    <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/omyband-back" target="_blanc">
+                        Lien vers le github (back-end)
+                    </a>
+                    <a className="project__link" href="https://github.com/Morgane-Rabiller/omyband-front" target="_blanc">
+                        Lien vers le github (front-end)
                     </a>
                 </div>
             </div>
