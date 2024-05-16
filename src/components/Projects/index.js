@@ -2,11 +2,13 @@ import { useEffect, useRef } from "react";
 import "./styles.scss";
 import apet4life from "src/assets/img/projects/apet4life.png";
 import omyband from "src/assets/img/projects/omyband.png";
+import oboardgame from "src/assets/img/projects/oboardgame.png";
 import Typewriter from "typewriter-effect";
 
 const Projects = () => {
   const refProject1 = useRef();
   const refProject2 = useRef();
+  const refProject3 = useRef();
 
   useEffect(() => {
     window.setTimeout(() => {
@@ -14,11 +16,13 @@ const Projects = () => {
       refProject1.current.style.opacity = 1;
       refProject2.current.style.transition = "5s";
       refProject2.current.style.opacity = 1;
+      refProject3.current.style.transition = "5s";
+      refProject3.current.style.opacity = 1;
     }, 3000)
   }, []);
 
     return (
-        <div className="projects p-5 my-5 md:mx-8">
+        <div className="projects pb-2 p-5 my-5 md:mx-8">
             <p className="font-bold text-2xl text-center mb-5">MES PROJETS</p>
             <Typewriter
                 onInit={(typewriter) => {
@@ -64,13 +68,29 @@ const Projects = () => {
                     <p className="project__title">O'MY BAND</p>
                     <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl" src={omyband} alt="omyband" />
                     <p className="mb-3">
-                        Projet réalisé en fin de formation CDA
+                        Projet réalisé en fin de formation CDA et continué en projet personnel
                     </p>
+                    <a className="project__link project__link--first" href="https://omyband.mogo-r.fr" target="_blanc">
+                        Lien vers le site
+                    </a>
                     <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/omyband-back" target="_blanc">
                         Lien vers le github (back-end)
                     </a>
                     <a className="project__link" href="https://github.com/Morgane-Rabiller/omyband-front" target="_blanc">
                         Lien vers le github (front-end)
+                    </a>
+                </div>
+                <div className="project flex align-items-center" ref={refProject3}>
+                    <p className="project__title">O'MY BAND</p>
+                    <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl" src={oboardgame} alt="omyband" />
+                    <p className="mb-3">
+                        Projet personnel
+                    </p>
+                    <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/oboardgame-back" target="_blanc">
+                        Lien vers le github (back-end en cours)
+                    </a>
+                    <a className="project__link" href="https://github.com/Morgane-Rabiller/oboardgame-front" target="_blanc">
+                        Lien vers le github (front-end pas commencé)
                     </a>
                 </div>
             </div>
