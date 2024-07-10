@@ -65,7 +65,7 @@ const Projects = () => {
                     </a>
                 </div>
                 <div className="project flex align-items-center" ref={refProject2}>
-                    <p className="project__title">O'MY BAND</p>
+                    <p className="project__title mb-3">O'MY BAND</p>
                     <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl" src={omyband} alt="omyband" />
                     <p className="mb-3">
                         Projet réalisé en fin de formation CDA et continué en projet personnel
@@ -81,7 +81,7 @@ const Projects = () => {
                     </a>
                 </div>
                 <div className="project flex align-items-center" ref={refProject3}>
-                    <p className="project__title">O'MY BAND</p>
+                    <p className="project__title mb-3">O'BoardGame</p>
                     <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl" src={oboardgame} alt="omyband" />
                     <p className="mb-3">
                         Projet personnel
