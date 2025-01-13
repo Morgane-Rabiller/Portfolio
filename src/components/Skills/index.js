@@ -25,7 +25,7 @@ import scrum from "src/assets/img/skills/scrum.png";
 import Typewriter from "typewriter-effect";
 
 const Skills = () => (
-    <div className="p-5 my-5 md:mx-8 text-center">
+    <div className="p-5 my-2 md:my-5 md:mx-8 text-center">
         <p className="skills__title font-bold text-5xl text-center mb-6">MES COMPÉTENCES</p>
         <Typewriter
             onInit={(typewriter) => {
@@ -41,7 +41,7 @@ const Skills = () => (
                 wrapperClassName: "font-semibold",
             }}
         />
-        <div className="container flex flex-wrap justify-content-between mt-5">
+        <div className="skills__container flex flex-wrap justify-content-between mt-5 h-15rem md:h-20rem">
           <div className="languages mb-5">
             <h1 className="text-xl mb-2">Langages</h1>
             <div className="flex">
@@ -70,7 +70,7 @@ const Skills = () => (
           </div>
           <div className="tools mb-5">
             <h1 className="text-xl mb-2">Outils et autre</h1>
-            <div className="flex">
+            <div className="flex flex-wrap">
               <Stack img={git} content="Git" />
               <Stack img={github} content="Github" />
               <Stack img={figma} content="Figma" />

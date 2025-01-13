@@ -4,8 +4,14 @@
     border: 5px solid vars.$color-skills;
     border-radius: 50px;
     background-color: vars.$color-bg-card;
+
+    &__title {
+      text-shadow: 1px 3px 4px rgb(37, 109, 75);
+    }
+
+    &__container {
+      overflow-y: auto;
+    }
 }
 
-.skills__title {
-  text-shadow: 1px 3px 4px rgb(37, 109, 75);
-}
+
