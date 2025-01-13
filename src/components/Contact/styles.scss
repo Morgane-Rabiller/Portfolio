@@ -1,8 +1,13 @@
 @use "src/styles/vars";
 
 .contact {
-    border: 5px solid vars.$color-contact;
-    border-radius: 50px;
-    background-color: vars.$color-bg-card;
+  border: 5px solid vars.$color-contact;
+  border-radius: 50px;
+  background-color: vars.$color-bg-card;
+  opacity: 0; /* Initialement invisible */
+  transition: opacity 3s ease-in-out; /* Doucement lors de l'apparition */
 }
 
+.contact.visible {
+  opacity: 1; /* Visible quand la classe 'visible' est ajoutée */
+}
