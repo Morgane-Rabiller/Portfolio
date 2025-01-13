@@ -26,7 +26,7 @@ import Typewriter from "typewriter-effect";
 
 const Skills = () => (
     <div className="p-5 my-5 md:mx-8 text-center">
-        <p className="skills__title font-bold text-2xl text-center mb-6">MES COMPÉTENCES</p>
+        <p className="skills__title font-bold text-5xl text-center mb-6">MES COMPÉTENCES</p>
         <Typewriter
             onInit={(typewriter) => {
                 typewriter

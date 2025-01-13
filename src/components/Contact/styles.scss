@@ -6,6 +6,10 @@
   background-color: vars.$color-bg-card;
   opacity: 0; /* Initialement invisible */
   transition: opacity 3s ease-in-out; /* Doucement lors de l'apparition */
+
+  &__title {
+    text-shadow: 1px 3px 4px rgb(156, 76, 76);
+  }
 }
 
 .contact.visible {

@@ -27,6 +27,11 @@
   &__link--third {
     margin-bottom: 1rem;
   }
+
+  &__title {
+    text-shadow: 1px 3px 4px rgb(149, 167, 69);
+  }
+
   &__content {
     max-height: 20rem;
     overflow-y: auto;

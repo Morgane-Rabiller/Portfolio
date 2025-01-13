@@ -15,7 +15,7 @@ const Contact = () => {
 
   return (
     <div className={`contact my-6 mx-auto p-5 text-center w-12 md:w-9 lg:w-6 xl:w-4 ${isVisible ? 'visible' : ''}`}>
-      <p className="font-bold text-2xl text-center mb-5">ME CONTACTER</p>
+      <p className="contact__title font-bold text-3xl text-center mb-5">ME CONTACTER</p>
       <div>
         <div className='flex align-items-center justify-content-start mb-3'>
           <p>Vous avez une question, une demande d'information ou de projet ?</p>

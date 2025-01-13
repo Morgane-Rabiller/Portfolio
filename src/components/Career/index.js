@@ -10,7 +10,7 @@ const Career = () => {
 
     return (
         <div className="p-5 my-5 md:mx-8 text-center">
-            <p className="career__title font-bold text-2xl text-center mb-5">
+            <p className="career__title font-bold text-5xl text-center mb-5">
                 {career.title}
             </p>
             <div className="career__content">

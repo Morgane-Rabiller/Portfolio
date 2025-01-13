@@ -28,9 +28,9 @@ const Projects = () => {
   };
 
     return (
-        <div className="pb-2 p-5 my-5 md:mx-8">
+        <div className="pb-2 p-5 my-5 md:mx-8 text-center">
           <div className="flex align-items-center align-content-center">
-            <p className="font-bold text-2xl text-center mb-5  flex-1">MES PROJETS</p>
+            <p className="project__title font-bold text-5xl text-center mb-5  flex-1">MES PROJETS</p>
             </div>
             
             <Typewriter
