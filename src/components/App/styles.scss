@@ -41,7 +41,7 @@ body {
 
     &--skills {
         color: vars.$color-skills;
-        background: linear-gradient(to bottom, vars.$color-dark 90%, vars.$color-skills 100%);
+        background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-skills 100%);
         
         .header__button {
           background-color: vars.$color-skills;
