@@ -6,12 +6,10 @@ import oboardgame from "src/assets/img/projects/oboardgame.png";
 import Typewriter from "typewriter-effect";
 
 const Projects = () => {
-  const typewriterRef = useRef(null);
-  const [isCompleted, setIsCompleted] = useState(false);
   const refProject1 = useRef();
   const refProject2 = useRef();
   const refProject3 = useRef();
-  const text = "Durant de mes deux formations, j'ai pratiqué les notions apprises dans divers projets proposés par la formation absolument tous les jours via différents challenges. Cependant, les principaux projets où on a pu mettre en pratique tout ce qu'on avait appris tout au long de l'année sont ceux que je présente ici avec mes projets personnels.";
+  const text = "Voilà les principaux projets que j'ai mis en place durant mes formations et personnellement.";
 
   useEffect(() => {
     window.setTimeout(() => {
@@ -30,12 +28,11 @@ const Projects = () => {
   };
 
     return (
-        <div className="projects pb-2 p-5 my-5 md:mx-8">
+        <div className="pb-2 p-5 my-5 md:mx-8">
           <div className="flex align-items-center align-content-center">
             <p className="font-bold text-2xl text-center mb-5  flex-1">MES PROJETS</p>
-            <button onClick={showFullText} className="px-4 py-2 bg-yellow-600 text-white rounded ml-auto"> Arreter le défilement </button>
             </div>
-            {isCompleted ? <p className="font-semibold">{text}</p> : (
+            
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
@@ -48,65 +45,67 @@ const Projects = () => {
                     wrapperClassName: "font-semibold",
                 }}
             />
-          )}
-            <div className="flex flex-column gap-5 m-6 md:flex-row md:justify-content-around md:gap-2">
-                <div className="project flex align-items-center" ref={refProject1}>
-                    <p className="mb-3">A Pet 4 Life</p>
-                    <img
-                        className="project__img w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem"
-                        src={apet4life}
-                        alt="aPet4Life"
-                    />
-                    <p className="mb-3 md:w-30rem">
-                        Projet réalisé en fin de formation DWWM <br/><br/> Site permettant de recenser les associations animales afin que les particulier puissent en trouver facilement selon leur localisation.
-                    </p>
-                    <a
-                        className="project__link project__link--first"
-                        href="https://apet4life.huiitre.fr/"
-                        target="_blanc"
-                    >
-                        Lien vers le site
-                    </a>
-                    <a
-                        className="project__link"
-                        href="https://github.com/Morgane-Rabiller/apet4life-back"
-                        target="_blanc"
-                    >
-                        Lien vers le Github du backend
-                    </a>
-                </div>
-                <div className="project flex align-items-center" ref={refProject2}>
-                    <p className="project__title mb-3">O'MY BAND</p>
-                    <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={omyband} alt="omyband" />
-                    <p className="mb-3 md:w-30rem">
-                        Projet réalisé en fin de formation CDA et continué en projet personnel <br/><br/> Site permettant aux musicien(ne)s et chanteurs/chanteuses ou groupe de musique de trouver des membres avec qui jouer.
-                    </p>
-                    <a className="project__link project__link--first" href="https://omyband.mogo-r.fr" target="_blanc">
-                        Lien vers le site
-                    </a>
-                    <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/omyband-back" target="_blanc">
-                        Lien vers le github (back-end)
-                    </a>
-                    <a className="project__link" href="https://github.com/Morgane-Rabiller/omyband-front" target="_blanc">
-                        Lien vers le github (front-end)
-                    </a>
-                </div>
-                <div className="project flex align-items-center" ref={refProject3}>
-                    <p className="project__title mb-3">O'BoardGame</p>
-                    <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={oboardgame} alt="omyband" />
-                    <p className="mb-3 md:w-30rem">
-                        Projet personnel <br/><br/> Application qui vise à sélectionner un jeu de société aléatoirement dans la bibliothèque personnelle des joueurs.
-                    </p>
-                    <a className="project__link project__link--first" href="https://oboardgame.mogo-r.fr/" target="_blanc">
-                        Lien vers le site
-                    </a>
-                    <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/oboardgame-back" target="_blanc">
-                        Lien vers le github back-end
-                    </a>
-                    <a className="project__link project__link--third" href="https://github.com/Morgane-Rabiller/oboardgame-front" target="_blanc">
-                        Lien vers le github front-end
-                    </a>
-                </div>
+
+            <div className="project__content">
+              <div className="flex mt-2 mb-3 flex-column md:flex-row md:flex-wrap md:justify-content-between md:gap-2">
+                  <div className="project flex align-items-center" ref={refProject1}>
+                      <p className="mb-3">A Pet 4 Life</p>
+                      <img
+                          className="project__img w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem"
+                          src={apet4life}
+                          alt="aPet4Life"
+                      />
+                      <p className="mb-3 md:w-30rem">
+                          Projet réalisé en fin de formation DWWM <br/><br/> Site permettant de recenser les associations animales afin que les particulier puissent en trouver facilement selon leur localisation.
+                      </p>
+                      <a
+                          className="project__link project__link--first"
+                          href="https://apet4life.huiitre.fr/"
+                          target="_blanc"
+                      >
+                          Lien vers le site
+                      </a>
+                      <a
+                          className="project__link"
+                          href="https://github.com/Morgane-Rabiller/apet4life-back"
+                          target="_blanc"
+                      >
+                          Lien vers le Github du backend
+                      </a>
+                  </div>
+                  <div className="project flex align-items-center" ref={refProject2}>
+                      <p className="project__title mb-3">O'MY BAND</p>
+                      <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={omyband} alt="omyband" />
+                      <p className="mb-3 md:w-30rem">
+                          Projet réalisé en fin de formation CDA et continué en projet personnel <br/><br/> Site permettant aux musicien(ne)s et chanteurs/chanteuses ou groupe de musique de trouver des membres avec qui jouer.
+                      </p>
+                      <a className="project__link project__link--first" href="https://omyband.mogo-r.fr" target="_blanc">
+                          Lien vers le site
+                      </a>
+                      <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/omyband-back" target="_blanc">
+                          Lien vers le github (back-end)
+                      </a>
+                      <a className="project__link" href="https://github.com/Morgane-Rabiller/omyband-front" target="_blanc">
+                          Lien vers le github (front-end)
+                      </a>
+                  </div>
+                  <div className="project flex align-items-center" ref={refProject3}>
+                      <p className="project__title mb-3">O'BoardGame</p>
+                      <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={oboardgame} alt="omyband" />
+                      <p className="mb-3 md:w-30rem">
+                          Projet personnel <br/><br/> Application qui vise à sélectionner un jeu de société aléatoirement dans la bibliothèque personnelle des joueurs.
+                      </p>
+                      <a className="project__link project__link--first" href="https://oboardgame.mogo-r.fr/" target="_blanc">
+                          Lien vers le site
+                      </a>
+                      <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/oboardgame-back" target="_blanc">
+                          Lien vers le github back-end
+                      </a>
+                      <a className="project__link project__link--third" href="https://github.com/Morgane-Rabiller/oboardgame-front" target="_blanc">
+                          Lien vers le github front-end
+                      </a>
+                  </div>
+              </div>
             </div>
         </div>
     );
