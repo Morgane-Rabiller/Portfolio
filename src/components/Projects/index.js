@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useState,useEffect, useRef } from "react";
 import "./styles.scss";
 import apet4life from "src/assets/img/projects/apet4life.png";
 import omyband from "src/assets/img/projects/omyband.png";
@@ -6,30 +6,40 @@ import oboardgame from "src/assets/img/projects/oboardgame.png";
 import Typewriter from "typewriter-effect";
 
 const Projects = () => {
+  const typewriterRef = useRef(null);
+  const [isCompleted, setIsCompleted] = useState(false);
   const refProject1 = useRef();
   const refProject2 = useRef();
   const refProject3 = useRef();
+  const text = "Durant de mes deux formations, j'ai pratiqué les notions apprises dans divers projets proposés par la formation absolument tous les jours via différents challenges. Cependant, les principaux projets où on a pu mettre en pratique tout ce qu'on avait appris tout au long de l'année sont ceux que je présente ici avec mes projets personnels.";
 
   useEffect(() => {
     window.setTimeout(() => {
-      refProject1.current.style.transition = "5s";
+      refProject1.current.style.transition = "3s";
       refProject1.current.style.opacity = 1;
-      refProject2.current.style.transition = "5s";
+      refProject2.current.style.transition = "3s";
       refProject2.current.style.opacity = 1;
-      refProject3.current.style.transition = "5s";
+      refProject3.current.style.transition = "3s";
       refProject3.current.style.opacity = 1;
-    }, 3000)
+    }, 1000)
   }, []);
+
+  const showFullText = () => {
+    setIsCompleted(true);  // Marque l'état comme "complété"
+    typewriterRef.current?.stop();  // Stoppe le défilement de texte
+  };
 
     return (
         <div className="projects pb-2 p-5 my-5 md:mx-8">
-            <p className="font-bold text-2xl text-center mb-5">MES PROJETS</p>
+          <div className="flex align-items-center align-content-center">
+            <p className="font-bold text-2xl text-center mb-5  flex-1">MES PROJETS</p>
+            <button onClick={showFullText} className="px-4 py-2 bg-yellow-600 text-white rounded ml-auto"> Arreter le défilement </button>
+            </div>
+            {isCompleted ? <p className="font-semibold">{text}</p> : (
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
-                        .typeString(
-                            "Durant de mes deux formations, j'ai pratiqué les notions apprises dans divers projets proposés par la formation absolument tous les jours via différents challenges. Cependant, les principaux projets où on a pu mettre en pratique tout ce qu'on avait appris tout au long de l'année sont ceux que je présente ici."
-                        )
+                        .typeString(text)
                         .start();
                 }}
                 options={{
@@ -38,16 +48,17 @@ const Projects = () => {
                     wrapperClassName: "font-semibold",
                 }}
             />
+          )}
             <div className="flex flex-column gap-5 m-6 md:flex-row md:justify-content-around md:gap-2">
                 <div className="project flex align-items-center" ref={refProject1}>
                     <p className="mb-3">A Pet 4 Life</p>
                     <img
-                        className="project__img w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl"
+                        className="project__img w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem"
                         src={apet4life}
                         alt="aPet4Life"
                     />
-                    <p className="mb-3">
-                        Projet réalisé en fin de formation DWWM
+                    <p className="mb-3 md:w-30rem">
+                        Projet réalisé en fin de formation DWWM <br/><br/> Site permettant de recenser les associations animales afin que les particulier puissent en trouver facilement selon leur localisation.
                     </p>
                     <a
                         className="project__link project__link--first"
@@ -66,9 +77,9 @@ const Projects = () => {
                 </div>
                 <div className="project flex align-items-center" ref={refProject2}>
                     <p className="project__title mb-3">O'MY BAND</p>
-                    <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl" src={omyband} alt="omyband" />
-                    <p className="mb-3">
-                        Projet réalisé en fin de formation CDA et continué en projet personnel
+                    <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={omyband} alt="omyband" />
+                    <p className="mb-3 md:w-30rem">
+                        Projet réalisé en fin de formation CDA et continué en projet personnel <br/><br/> Site permettant aux musicien(ne)s et chanteurs/chanteuses ou groupe de musique de trouver des membres avec qui jouer.
                     </p>
                     <a className="project__link project__link--first" href="https://omyband.mogo-r.fr" target="_blanc">
                         Lien vers le site
@@ -82,15 +93,18 @@ const Projects = () => {
                 </div>
                 <div className="project flex align-items-center" ref={refProject3}>
                     <p className="project__title mb-3">O'BoardGame</p>
-                    <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl" src={oboardgame} alt="omyband" />
-                    <p className="mb-3">
-                        Projet personnel
+                    <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={oboardgame} alt="omyband" />
+                    <p className="mb-3 md:w-30rem">
+                        Projet personnel <br/><br/> Application qui vise à sélectionner un jeu de société aléatoirement dans la bibliothèque personnelle des joueurs.
                     </p>
-                    <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/oboardgame-back" target="_blanc">
-                        Lien vers le github (back-end en cours)
+                    <a className="project__link project__link--first" href="https://oboardgame.mogo-r.fr/" target="_blanc">
+                        Lien vers le site
                     </a>
-                    <a className="project__link" href="https://github.com/Morgane-Rabiller/oboardgame-front" target="_blanc">
-                        Lien vers le github (front-end pas commencé)
+                    <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/oboardgame-back" target="_blanc">
+                        Lien vers le github back-end
+                    </a>
+                    <a className="project__link project__link--third" href="https://github.com/Morgane-Rabiller/oboardgame-front" target="_blanc">
+                        Lien vers le github front-end
                     </a>
                 </div>
             </div>
