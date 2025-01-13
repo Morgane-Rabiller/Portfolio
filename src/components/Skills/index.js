@@ -41,7 +41,7 @@ const Skills = () => (
                 wrapperClassName: "font-semibold",
             }}
         />
-        <div className="skills__container flex flex-wrap justify-content-between mt-5 h-14rem md:h-20rem">
+        <div className="skills__container flex flex-wrap justify-content-between mt-5 md:mt-8 h-14rem md:h-20rem">
           <div className="languages mb-5">
             <h1 className="text-xl mb-2">Langages</h1>
             <div className="flex">

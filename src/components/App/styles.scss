@@ -8,7 +8,7 @@ html {
 
 body {
     background-color: vars.$color-dark;
-    background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-main 100%);
+    background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-main 100%) !important;
     width: 100%;
     height: calc(100% - 2rem);
     width: 100%;

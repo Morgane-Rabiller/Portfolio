@@ -33,6 +33,7 @@ const Projects = () => {
             <p className="project__title font-bold text-5xl text-center mb-5  flex-1">MES PROJETS</p>
             </div>
             
+            <div className="md:mb-6">
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter
@@ -45,11 +46,12 @@ const Projects = () => {
                     wrapperClassName: "font-semibold",
                 }}
             />
+            </div>
 
             <div className="project__content">
               <div className="flex mt-2 mb-3 flex-column md:flex-row md:flex-wrap md:justify-content-between md:gap-2">
                   <div className="project flex align-items-center" ref={refProject1}>
-                      <p className="mb-3">A Pet 4 Life</p>
+                      <p className="project__title mb-3">A Pet 4 Life</p>
                       <img
                           className="project__img w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem"
                           src={apet4life}

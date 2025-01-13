@@ -18,7 +18,7 @@ const Contact = () => {
       <p className="contact__title font-bold text-3xl text-center mb-5">ME CONTACTER</p>
       <div>
         <div className='flex align-items-center justify-content-start mb-3'>
-          <p>Vous avez une question, une demande d'information ou de projet ?</p>
+          <p>Vous avez des questions, des demandes d'informations ou de projets ?</p>
         </div>
         <div className='flex align-items-center justify-content-start mb-3'>
           <img className='w-3rem mr-3' src={mail} alt="mail" />
