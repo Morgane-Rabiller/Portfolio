@@ -46,7 +46,7 @@ const Header = () => {
   }
 
     return (
-        <div className="flex justify-content-between">
+        <div className="flex justify-content-between m-3">
             <div className="flex align-items-center">
                 <img src={logo} alt="Mogo" className="w-5rem h-7rem mr-3 md:w-7rem md:h-10rem md:mr-5" />
                 <h1 className="header__title text-4xl md:text-6xl"> <strong>MOGO</strong></h1>

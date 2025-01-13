@@ -1,13 +1,25 @@
 @use "src/styles/vars";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;600;700&family=Vampiro+One&display=swap");
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
     background-color: vars.$color-dark;
+    background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-main 100%);
+    width: 100%;
+    height: calc(100% - 2rem);
+}
+#root {
+  height: calc(100% + 1rem);
 }
 
 .app {
     color: vars.$color-main;
     font-family: "Roboto Mono";
+    height: 100%;
 
     &--description {
         color: vars.$color-main;
@@ -19,6 +31,7 @@ body {
 
     &--career {
         color: vars.$color-career;
+        background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-career 100%);
 
         .header__button {
             background-color: vars.$color-career;
@@ -27,22 +40,25 @@ body {
 
     &--skills {
         color: vars.$color-skills;
-
+        background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-skills 100%);
+        
         .header__button {
-            background-color: vars.$color-skills;
+          background-color: vars.$color-skills;
         }
-    }
-
-    &--projects {
+      }
+      
+      &--projects {
         color: vars.$color-project;
-
+        background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-project 100%);
+        
         .header__button {
-            background-color: vars.$color-project;
+          background-color: vars.$color-project;
         }
-    }
-
-    &--contact {
+      }
+      
+      &--contact {
         color: vars.$color-contact;
+        background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-contact 100%);
 
         .header__button {
             background-color: vars.$color-contact;

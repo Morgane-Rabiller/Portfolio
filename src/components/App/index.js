@@ -12,7 +12,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 // == Composant
 const App = () =>  {
   const location = useLocation();
-  let classname = "m-3 font-semibold ";
+  let classname = "font-semibold ";
 
   switch (location.pathname) {
     case "/":
