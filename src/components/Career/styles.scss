@@ -4,8 +4,16 @@
     border: 5px solid vars.$color-career;
     border-radius: 50px;
     background-color: vars.$color-bg-card;
+
+    &__title {
+      text-shadow: 1px 3px 4px rgb(136, 51, 129);
+    }
+    
+    &__content {
+      max-height: 20rem; /* Limite la hauteur à 70% de la fenêtre */
+      overflow-y: auto; /* Active le défilement vertical si nécessaire */
+      padding: 10px;
+      margin-top: 20px;
+    }
 }
 
-.career__title {
-  text-shadow: 1px 3px 4px rgb(136, 51, 129);
-}

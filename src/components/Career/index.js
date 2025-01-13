@@ -13,18 +13,20 @@ const Career = () => {
             <p className="career__title font-bold text-2xl text-center mb-5">
                 {career.title}
             </p>
-            <Typewriter
-                onInit={(typewriter) => {
-                    typewriter
-                        .typeString(cleanContent)
-                        .start();
-                }}
-                options={{
-                    autoStart: true,
-                    delay: 10,
-                    wrapperClassName: "font-semibold line-height-4",
-                }}
-            />
+            <div className="career__content">
+              <Typewriter
+                  onInit={(typewriter) => {
+                      typewriter
+                          .typeString(cleanContent)
+                          .start();
+                  }}
+                  options={{
+                      autoStart: true,
+                      delay: 10,
+                      wrapperClassName: "font-semibold line-height-4",
+                  }}
+              />
+            </div>
         </div>
     );
 };

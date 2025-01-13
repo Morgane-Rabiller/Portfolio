@@ -11,6 +11,7 @@ body {
     background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-main 100%);
     width: 100%;
     height: calc(100% - 2rem);
+    width: 100%;
 }
 #root {
   height: calc(100% + 1rem);
