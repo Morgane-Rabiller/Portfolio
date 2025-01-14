@@ -42,7 +42,7 @@ const Projects = () => {
                 }}
                 options={{
                     autoStart: true,
-                    delay: 10,
+                    delay: 16,
                     wrapperClassName: "font-semibold",
                 }}
             />
@@ -50,10 +50,10 @@ const Projects = () => {
 
             <div className="project__content">
               <div className="flex mt-2 mb-3 flex-column md:flex-row md:flex-wrap md:justify-content-between md:gap-2">
-                  <div className="project flex align-items-center" ref={refProject1}>
+                  <div className="project flex align-items-center mb-6 md:mb-3" ref={refProject1}>
                       <p className="project__title mb-3">A Pet 4 Life</p>
                       <img
-                          className="project__img w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem"
+                          className=" w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem"
                           src={apet4life}
                           alt="aPet4Life"
                       />
@@ -75,9 +75,9 @@ const Projects = () => {
                           Lien vers le Github du backend
                       </a>
                   </div>
-                  <div className="project flex align-items-center" ref={refProject2}>
+                  <div className="project flex align-items-center mb-6 md:mb-3" ref={refProject2}>
                       <p className="project__title mb-3">O'MY BAND</p>
-                      <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={omyband} alt="omyband" />
+                      <img className="  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={omyband} alt="omyband" />
                       <p className="mb-3 md:w-30rem">
                           Projet réalisé en fin de formation CDA et continué en projet personnel <br/><br/> Site permettant aux musicien(ne)s et chanteurs/chanteuses ou groupe de musique de trouver des membres avec qui jouer.
                       </p>
@@ -91,9 +91,9 @@ const Projects = () => {
                           Lien vers le github (front-end)
                       </a>
                   </div>
-                  <div className="project flex align-items-center" ref={refProject3}>
+                  <div className="project flex align-items-center mb-6 md:mb-3" ref={refProject3}>
                       <p className="project__title mb-3">O'BoardGame</p>
-                      <img className="project__img  w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={oboardgame} alt="omyband" />
+                      <img className=" w-15rem md:w-17rem lg:w-25rem xl:w-30rem mb-3 border-round-3xl h-18rem" src={oboardgame} alt="omyband" />
                       <p className="mb-3 md:w-30rem">
                           Projet personnel <br/><br/> Application qui vise à sélectionner un jeu de société aléatoirement dans la bibliothèque personnelle des joueurs.
                       </p>

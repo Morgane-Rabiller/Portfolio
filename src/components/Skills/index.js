@@ -37,7 +37,7 @@ const Skills = () => (
             }}
             options={{
                 autoStart: true,
-                delay: 10,
+                delay: 16,
                 wrapperClassName: "font-semibold",
             }}
         />

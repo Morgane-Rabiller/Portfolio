@@ -22,7 +22,7 @@ const Career = () => {
                   }}
                   options={{
                       autoStart: true,
-                      delay: 10,
+                      delay: 16,
                       wrapperClassName: "font-semibold line-height-4",
                   }}
               />
