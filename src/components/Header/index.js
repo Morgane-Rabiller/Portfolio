@@ -38,6 +38,10 @@ const Header = () => {
       classnameSidebar += "contact-color";
       classnameSidebarTitle += "contact-color";
       break;
+    case "/mentions-legales":
+      classnameSidebar += "li-color";
+      classnameSidebarTitle += "li-color";
+      break;
     default: {
       classnameSidebar += "main-color";
       classnameSidebarTitle += "main-color"

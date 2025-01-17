@@ -64,5 +64,21 @@ body {
         .header__button {
             background-color: vars.$color-contact;
         }
-    }
+      }
+      &--li {
+        color: vars.$color-li;
+        background: linear-gradient(to bottom, vars.$color-dark 80%, vars.$color-li 100%);
+
+        .header__button {
+            background-color: vars.$color-li;
+        }
+      }
+}
+
+.footer {
+  color: black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
