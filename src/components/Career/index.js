@@ -5,7 +5,7 @@ import DOMPurify from "dompurify";
 
 const Career = () => {
     const cleanContent = DOMPurify.sanitize(career.content, {
-        ALLOWED_TAGS: ["br"],
+        ALLOWED_TAGS: ["br", "strong"],
     });
 
     return (
