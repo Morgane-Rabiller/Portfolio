@@ -1,5 +1,5 @@
 export default {
-  title: "MOGO.CODE",
+  title: "<strong>MOGO.CODE</strong>",
   content: `
   Morgane Rabiller <br/><br/>
   <strong>Développeuse web Fullstack Javascript</strong> | React / Vue / Node <br/><br/><br/>
