@@ -61,13 +61,6 @@ const Projects = () => {
                           Projet réalisé en fin de formation DWWM <br/><br/> Site permettant de recenser les associations animales afin que les particulier puissent en trouver facilement selon leur localisation.
                       </p>
                       <a
-                          className="project__link project__link--first"
-                          href="https://apet4life.huiitre.fr/"
-                          target="_blanc"
-                      >
-                          Lien vers le site
-                      </a>
-                      <a
                           className="project__link"
                           href="https://github.com/Morgane-Rabiller/apet4life-back"
                           target="_blanc"
@@ -81,9 +74,6 @@ const Projects = () => {
                       <p className="mb-3 md:w-30rem">
                           Projet réalisé en fin de formation CDA et continué en projet personnel <br/><br/> Site permettant aux musicien(ne)s et chanteurs/chanteuses ou groupe de musique de trouver des membres avec qui jouer.
                       </p>
-                      <a className="project__link project__link--first" href="https://omyband.mogo-r.fr" target="_blanc">
-                          Lien vers le site
-                      </a>
                       <a className="project__link project__link--first" href="https://github.com/Morgane-Rabiller/omyband-back" target="_blanc">
                           Lien vers le github (back-end)
                       </a>
